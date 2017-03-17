@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_write"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="封存记忆" />
+        <item
+            android:id="@+id/nav_look"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="记忆宫殿" />
+        <item
+            android:id="@+id/nav_nearby"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="周围记忆" />
+    </group>
+
+    <item android:title="Others">
+        <menu>
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_menu_share"
+                android:title="设置" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_menu_send"
+                android:title="关于" />
+        </menu>
+    </item>
+
+</menu>

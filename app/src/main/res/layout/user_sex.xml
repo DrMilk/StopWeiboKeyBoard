@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/userdilog_txt"
+            android:text="性别"
+            android:theme="@style/style_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/user_sex_spin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/style_about"
+            android:entries="@array/sex"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:id="@+id/user_sex_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/sns_upload_fail"/>
+            <ImageView
+                android:id="@+id/user_sex_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/sns_upload_success"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

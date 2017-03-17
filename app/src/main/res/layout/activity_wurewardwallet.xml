@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/mp_blue">
+        <RelativeLayout
+            android:layout_marginLeft="6dp"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_gravity="center"
+            android:background="@drawable/tab_main_head_small"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:id="@+id/rewardwaller_imghead"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ohi"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_centerInParent="true">
+            <TextView
+                android:id="@+id/wurewardwallet_will"
+                android:padding="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:text="未完成"
+                android:textColor="@color/mp_blue"
+                android:background="@drawable/reward_wallet_top_bg_normal2"/>
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/wurewardwallet_done"
+                android:padding="6dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="12sp"
+                android:text="已完成"
+                android:background="@drawable/reward_wallet_top_bg_press"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/wurewardwallet_add"
+            android:paddingRight="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/header_btn_add_nor"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/wurewardwallet_fragment_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"/>
+</LinearLayout>

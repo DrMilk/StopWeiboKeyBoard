@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/recycle_remark_linear_top"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_remark_bg_purple_top">
+            <TextView
+                android:id="@+id/recycle_remark_text"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white_smoke"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/recycle_remark_linear_bottom"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@drawable/tab_remark_bg_purple_bottom">
+            <ImageView
+                android:id="@+id/recycle_remark_great_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/rc_praise"/>
+            <TextView
+                android:id="@+id/recycle_remark_great_num"
+                android:gravity="center_vertical|right"
+                android:layout_marginLeft="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/recycle_remark_bad_pic"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/rc_no"/>
+
+            <TextView
+                android:id="@+id/recycle_remark_bad_num"
+                android:gravity="center_vertical|right"
+                android:layout_marginLeft="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/recycle_remark_writter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18249028972"
+                    android:theme="@style/style_about"
+                    android:textStyle="bold|italic"
+                    android:layout_gravity="right"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

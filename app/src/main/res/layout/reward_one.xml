@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:background="@drawable/tab_reward_bgcircle"
+    android:id="@+id/reward_one_linear"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+    <TextView
+        android:id="@+id/reward_one_keyword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="家庭住址"
+        android:textColor="@color/white_smoke"
+        android:textSize="12sp"/>
+    <TextView
+        android:id="@+id/reward_one_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥"
+        android:layout_marginLeft="6dp"
+        android:textStyle="italic"
+        android:textColor="@color/white_smoke"
+        android:textSize="10sp"/>
+    <TextView
+        android:textStyle="italic"
+        android:id="@+id/reward_one_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white_smoke"
+        android:textSize="10sp"/>
+</LinearLayout>
+</LinearLayout>
