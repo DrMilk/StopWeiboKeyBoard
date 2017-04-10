@@ -1,8 +1,12 @@
 package treememory.com.treememory.Utils;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
+import android.net.Uri;
+
+import java.io.File;
 
 /**
  * Created by Administrator on 2017/2/22.
@@ -57,5 +61,25 @@ public class AppUtil {
             e.printStackTrace();
         }
         return 0;
+    }
+    public static Intent getshareMsgIntent(String activityTitle, String msgTitle, String msgText,
+                                           String imgPath) {
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        if (imgPath == null || imgPath.equals("")) {
+            intent.setType("text/plain"); // 纯文本
+        } else {
+            File f = new File(imgPath);
+            if (f != null && f.exists() && f.isFile()) {
+                intent.setType("image/png");
+                Uri u = Uri.fromFile(f);
+                intent.putExtra(Intent.EXTRA_STREAM, u);
+            }
+        }
+
+
+        intent.putExtra(Intent.EXTRA_SUBJECT, msgTitle);
+        intent.putExtra(Intent.EXTRA_TEXT, msgText);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        return Intent.createChooser(intent, activityTitle);
     }
 }
