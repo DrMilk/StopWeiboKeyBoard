@@ -45,7 +45,7 @@ public class AppUtil {
         }catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
         }
-        return null;
+        return "无";
     }
 
     /**
