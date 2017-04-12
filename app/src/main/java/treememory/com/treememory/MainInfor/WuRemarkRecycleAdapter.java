@@ -160,7 +160,7 @@ public class WuRemarkRecycleAdapter extends RecyclerView.Adapter<WuRemarkRecycle
 
     @Override
     public int getItemCount() {
-        return should_max;
+        return list_remark_all.size();
     }
 
     @Override
