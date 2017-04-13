@@ -13,6 +13,8 @@ import java.io.File;
  */
 
 public class AppUtil {
+    public  String TAG="AppUtil";
+
     private AppUtil() {
         throw new UnsupportedOperationException("AppUtil cannot instantiated");
     }
