@@ -11,6 +11,7 @@ import treememory.com.treememory.OnlineData.Other;
  */
 
 public class MyInfoDao {
+    private String TAG="MyInfoDao";
     private MySqliteOpenHelper msoh;
     public void MyInfoDao(Context context){
         msoh=new MySqliteOpenHelper(context);
