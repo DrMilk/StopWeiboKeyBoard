@@ -7,4 +7,5 @@ import android.app.Activity;
  */
 
 public class KeyboardInfor extends Activity{
+    private String TAG="KeyboardInfor";
 }
