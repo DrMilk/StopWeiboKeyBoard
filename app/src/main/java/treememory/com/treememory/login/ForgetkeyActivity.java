@@ -20,6 +20,7 @@ public class ForgetkeyActivity extends Activity{
     private EditText editTextphone;
     private EditText editTextpassword;
     private EditText editTextauthcode;
+    private String TAG="ForgetkeyActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
