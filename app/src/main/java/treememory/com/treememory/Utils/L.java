@@ -7,7 +7,7 @@ import android.util.Log;
  */
 
 public class L {
-    private String TAG="LL";
+    private String TAG="LLL";
     private static boolean isOpen=true;
     private static String myName="Wu";
     static String[] TGAS={
