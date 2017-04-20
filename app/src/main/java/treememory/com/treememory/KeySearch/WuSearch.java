@@ -46,7 +46,7 @@ import treememory.com.treememory.WuUpload.WuSdcard;
 
 public class WuSearch extends Activity implements View.OnClickListener{
     private final Other other=new Other();
-    private String TAG="WuSearch";
+    private String TAG="WuSearchWuSearch";
     private ListView lv;
     private SearchView sv;
     private ArrayList<String> list_data=new ArrayList<String>();
